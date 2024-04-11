@@ -8,4 +8,4 @@ function getF(e){
       return (getF(e-1)+getF(e-2))
   }
 }
-  
+export getF  
