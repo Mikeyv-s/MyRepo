@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <!-- add style later-->
+  </head>
+  <body>
+    <script type="module" src="Fibonacci.js"></script>
+    <button onclick="go()">Enter a number</button>
+  </body>
+  <script type="module">
+    import getF from './Fibonacci.js'
+    function go(){
+      var x = prompt("enter here")
+      for(i=0;i<x;i++){
+        document.write(getF(i)+",<br>")
+      }
+      document.write(getF(x)+"...")
+    }
+      
+  </script>
+</html>
